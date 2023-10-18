@@ -1,37 +1,17 @@
 {
-  "name": "risk-test",
+  "name": "makeup",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
-    "files": [
-    "dist"
-  ],
+  "main": "index.js",
   "scripts": {
-    "test": "playwright test --config=./playwright-local.config.ts",
-    "test:tag": "playwright test --config=./playwright-local.config.ts --grep",
-    "test:skipTag": "playwright test --config=./playwright-local.config.ts --grep-invert",
-    "test:coverage": "nyc --reporter=lcov --reporter=text-summary npm run test",
-    "lint": "eslint . --ext .ts",
-    "lint:fix": "eslint . --fix --ext .ts",
-    "lint:ts": "tsc --noEmit --project tsconfig-lint.json",
-    "build": "tsc",
+    "test:tag": "npx playwright test --grep"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@cloudbeds/eslint-config": "2.1.1",
-    "eslint": "8.19.0",
-    "eslint-plugin-playwright": "0.11.2",
-  },
- "dependencies": {
-   "@faker-js/faker": "^7.6.0",
-    "@playwright/test": "1.33.0",
-    "@types/node": "18.17.4",
-    "typescript": "^5.2.2",
-    "dotenv-defaults": "5.0.0",
-    "moment": "2.29.4",
-    "playwright": "1.33.0",
-    "playwright-test-coverage": "^1.2.7",
+    "@playwright/test": "^1.32.2",
+    "@types/node": "^18.15.11",
+    "typescript": "^5.0.4"
   }
 }

@@ -2,14 +2,12 @@
   "compilerOptions": {
     "esModuleInterop": true,
     "declaration": true,
-    "outDir": "dist",
-    "skipLibCheck": true
+    "outDir": "dist"
   },
   "exclude": [
     "node_modules",
     "dist",
     "tests",
-    "playwright-local.config.ts",
-    "src/config.ts"
+    "playwright.config.ts",
   ]
 }
